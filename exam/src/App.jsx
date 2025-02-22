@@ -38,10 +38,11 @@ function App() {
     );
     if (current === 'All') {
       setProducts(allProduct);
+      setFilterCategory(allProduct);
     } else {
       setProducts(category);
+      setFilterCategory(category);
     }
-    setFilterCategory(category);
     setText('');
   };
 
